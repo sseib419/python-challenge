@@ -26,7 +26,9 @@ with open(file_to_load) as financial_data:
     # Extract first row to avoid appending to net_change_list
     first_row = next(reader)
     total_months += 1
+    # Collecting the first row's profit/loss value into the total variable
     total_net += int(first_row[1])
+    #taking the first profit/loss value so it can be subtracted from the 2nd value later
     previous_value = int(first_row[1])
     
 
