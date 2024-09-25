@@ -61,6 +61,7 @@ with open(file_to_output, "w") as txt_file:
 
         # Get the vote count and calculate the percentage
         index = vote_count["candidate"].index(candidate)
+        # Getting the number of votes for the candidate 
         numerator = vote_count["votes"][index]
         percentage = (numerator / total_votes) * 100
 
